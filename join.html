@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Home Practice</title>
+<link rel="shortcut icon" type="image/png" href="img/lo.png">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" type="text/css" href="css/swiper.min.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+<!-----NavigationBar---->
+<section id="nav-bar">
+<nav class="navbar navbar-expand-lg navbar-light">
+  <a class="navbar-brand" href="#"><img src="img/logo.png"></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="index.html">HOME</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">ABOUT US</a>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    <a class="dropdown-item" href="#"></a>
+    <a class="dropdown-item" href="about.html">WHO WE ARE</a>
+    <a class="dropdown-item" href="focus.html">OUR FOCUS</a>
+    <a class="dropdown-item" href="team.html">OUR TEAM</a>
+  </div>
+      <li class="nav-item">
+        <a class="nav-link" href="join.html">JOIN</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="gallery.html">GALLERY</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="contact.html">CONTACT</a>
+        
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" id="button" href="https://paystack.com/pay/gia2qz4u0i">DONATE</a></div>
+      </li>
+    </ul>
+  </div>
+</nav>
+<!--------FORM--------->
+<section id="contact">
+	<div class="container">
+	<h4>You are expected to supply the information required accurately and sincerely, as integrity is one of our core values.</h4>
+<form role="form" action="join_helper.php" method="post">
+    <div class="form-group">
+  <div class="row" style="margin-top: 30px;">
+        <div class="col-md-6">
+          <label for="name">Full Name </label>
+          <input id="name" class="form-control" name="name" placeholder="Your Full Name" type="name" required>
+        </div>
+        <div class="col-md-6">
+          <label for="email">Email Address </label>
+          <input class="form-control" id="email" name="email" placeholder="Email Address" type="text" required>
+        </div>
+      </div>
+
+<div class="row" style="margin-top: 30px;">
+        <div class="col-md-6">
+          <label>Gender </label><br>
+          <div class="radio-inline">
+  <label><input type="radio" name="gender" value="male" required>Male</label>
+          </div>
+          <div class="radio-inline">
+  <label><input type="radio" name="gender" value="female">Female</label>
+          </div>
+
+        </div>
+        <div class="col-md-6">
+          <label for="age">Date Of Birth</label>
+          <input class="form-control" id="dob" name="dob" placeholder="Format 02/06/1998" type="text" required>
+        </div>
+      </div>
+<div class="row" style="margin-top: 30px;">
+        <div class="col-md-6">
+          <label for="course">Occupation</label>
+          <input id="occupation" class="form-control" name="occupation" placeholder="Occupation (if any)?" type="text">
+        </div>
+        <div class="col-md-6">
+          <label for="number">Phone Number</label>
+          <input class="form-control" id="number" name="number" placeholder="Your phone number?" type="number" >
+        </div>
+      </div>
+
+      <div class="row" style="margin-top: 30px;">
+        <div class="col-md-6 ">
+          <label for="skills">What skills will you be bringing to the table? (100 words)</label>
+          <textarea id="skills" class="form-control" name="skills" placeholder="Your answer" type="text" required ></textarea>
+        </div>
+        <div class="col-md-6 ">
+          <label for="why">Why do you want to volunteer with PFF? (100 words)</label>
+          <textarea id="why" class="form-control" name="why" placeholder="Your answer" type="email" required></textarea>
+        </div>
+        
+      </div>
+
+<div class="row" style="margin-top: 30px;">
+        <div class="col-md-4 ">
+           <label>How did you get to know about PFF?</label><br>
+          <div class="radio">
+  <label><input type="radio" name="how" value="mouth" required>Word of mouth</label>
+          </div>
+          <div class="radio">
+  <label><input type="radio" name="how" value="social">Social media</label>
+          </div>
+          <div class="radio">
+  <label><input type="radio" name="how" value="events">Events</label>
+          </div>
+          <div class="radio">
+  <label><input type="radio" name="how" value="member">PFF member</label>
+          </div>
+        </div>
+
+        <div class="col-md-4 ">
+           <label>How long do you want to stay with us? </label><br>
+          <div class="radio">
+  <label><input type="radio" name="duration"  value="sixmonths" required>6 months</label>
+          </div>
+          <div class="radio">
+  <label><input type="radio" name="duration" value="oneyear">1 year</label>
+          </div>
+          <div class="radio">
+  <label><input type="radio" name="duration" value="twoyears">2 years and above</label>
+          </div>
+        </div>
+        
+        <div class="col-md-4 ">
+          
+
+      </div>
+
+     
+
+      <div class="row" style="margin-top: 30px;">
+        <div class="col-md-4 ">
+           <label>Which of these volunteering role would you prefer?</label><br>
+          <div class="radio">
+  <label><input type="radio"  name="role" value="online" required>Online</label>
+          </div>
+          <div class="radio">
+  <label><input type="radio" name="role" value="onsite">Onsite</label>
+          </div>
+          <div class="radio">
+  <label><input type="radio" name="role" value="both">Both</label>
+          </div>
+        </div>
+        <div class="col-md-4 ">
+           <label>How many hours can you dedicate to the volunteering work in a week?</label><br>
+          <div class="radio">
+  <label><input type="radio" name="dedicate" value="twohours" required>2 hours</label>
+          </div>
+          <div class="radio">
+  <label><input type="radio" name="dedicate" value="fourhours">4 hours</label>
+          </div>
+          <div class="radio">
+  <label><input type="radio" name="dedicate" value="sixhours">6 hours</label>
+          </div>
+        </div>
+      
+        <div class="col-md-4 ">
+          <label for="degree">Degree</label><br>
+          <div class="radio">
+  <label><input type="radio" name="degree" value="masters" required>Masters</label>
+          </div>
+          <div class="radio">
+  <label><input type="radio" name="degree" value="bachelor">Bachelor</label>
+          </div>
+          <div class="radio">
+  <label><input type="radio" name="degree" value="undergraduate">Undergraduate</label>
+          </div>
+          <div class="radio">
+  <label><input type="radio" name="degree" value="jambite">Jambite</label>
+          </div>
+        </div>
+      </div>
+      
+</div>
+<button type="Submit" class="btn btn-primary" value="submit">SEND MESSAGE</button>
+</div>
+
+  </form>
+</div>
+</section>
+</body>
+</html>
